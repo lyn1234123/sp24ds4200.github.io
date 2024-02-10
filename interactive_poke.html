@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-481f688faad12e9081ba379ba69e37ae"}, "mark": {"type": "point", "shape": {"expr": "param_31"}, "size": {"expr": "param_32"}, "strokeWidth": {"expr": "param_33"}}, "encoding": {"tooltip": [{"field": "Weight", "type": "quantitative"}, {"field": "Attack", "type": "quantitative"}, {"field": "Pokemon", "type": "nominal"}], "x": {"field": "Weight", "type": "quantitative"}, "y": {"field": "Attack", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_31", "bind": {"input": "select", "options": ["arrow", "circle", "triangle", "square"], "name": "Shape: "}, "value": "circle"}, {"name": "param_32", "bind": {"input": "range", "max": 500, "min": 0, "name": "Size: ", "step": 10}, "value": 50}, {"name": "param_33", "bind": {"input": "range", "max": 10, "min": 0, "name": "StokeWidth: ", "step": 0.5}, "value": 2}], "title": "Attack power by Weight of Pok\u00e9mon", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-481f688faad12e9081ba379ba69e37ae": [{"Weight": 94, "Attack": 49, "Pokemon": "Squirtle"}, {"Weight": 97, "Attack": 69, "Pokemon": "Bulbasaur"}, {"Weight": 114, "Attack": 41, "Pokemon": "Squirtle"}, {"Weight": 117, "Attack": 35, "Pokemon": "Pikachu"}, {"Weight": 117, "Attack": 64, "Pokemon": "Pikachu"}, {"Weight": 59, "Attack": 95, "Pokemon": "Squirtle"}, {"Weight": 133, "Attack": 69, "Pokemon": "Bulbasaur"}, {"Weight": 71, "Attack": 94, "Pokemon": "Charmander"}, {"Weight": 86, "Attack": 0, "Pokemon": "Pikachu"}, {"Weight": 137, "Attack": 50, "Pokemon": "Charmander"}, {"Weight": 120, "Attack": 36, "Pokemon": "Squirtle"}, {"Weight": 138, "Attack": 34, "Pokemon": "Squirtle"}, {"Weight": 138, "Attack": 48, "Pokemon": "Charmander"}, {"Weight": 62, "Attack": 93, "Pokemon": "Squirtle"}, {"Weight": 108, "Attack": 3, "Pokemon": "Bulbasaur"}, {"Weight": 115, "Attack": 98, "Pokemon": "Bulbasaur"}, {"Weight": 89, "Attack": 42, "Pokemon": "Bulbasaur"}, {"Weight": 137, "Attack": 77, "Pokemon": "Squirtle"}, {"Weight": 96, "Attack": 21, "Pokemon": "Charmander"}, {"Weight": 138, "Attack": 73, "Pokemon": "Pikachu"}, {"Weight": 131, "Attack": 0, "Pokemon": "Pikachu"}, {"Weight": 87, "Attack": 10, "Pokemon": "Bulbasaur"}, {"Weight": 75, "Attack": 43, "Pokemon": "Pikachu"}, {"Weight": 127, "Attack": 58, "Pokemon": "Squirtle"}, {"Weight": 122, "Attack": 23, "Pokemon": "Charmander"}, {"Weight": 59, "Attack": 59, "Pokemon": "Squirtle"}, {"Weight": 70, "Attack": 2, "Pokemon": "Squirtle"}, {"Weight": 130, "Attack": 98, "Pokemon": "Charmander"}, {"Weight": 119, "Attack": 62, "Pokemon": "Pikachu"}, {"Weight": 129, "Attack": 35, "Pokemon": "Charmander"}, {"Weight": 97, "Attack": 94, "Pokemon": "Squirtle"}, {"Weight": 114, "Attack": 67, "Pokemon": "Charmander"}, {"Weight": 132, "Attack": 82, "Pokemon": "Charmander"}, {"Weight": 149, "Attack": 46, "Pokemon": "Bulbasaur"}, {"Weight": 138, "Attack": 99, "Pokemon": "Bulbasaur"}, {"Weight": 99, "Attack": 20, "Pokemon": "Squirtle"}, {"Weight": 79, "Attack": 81, "Pokemon": "Squirtle"}, {"Weight": 69, "Attack": 50, "Pokemon": "Pikachu"}, {"Weight": 69, "Attack": 27, "Pokemon": "Squirtle"}, {"Weight": 64, "Attack": 14, "Pokemon": "Pikachu"}, {"Weight": 89, "Attack": 41, "Pokemon": "Pikachu"}, {"Weight": 82, "Attack": 58, "Pokemon": "Charmander"}, {"Weight": 115, "Attack": 65, "Pokemon": "Charmander"}, {"Weight": 59, "Attack": 36, "Pokemon": "Squirtle"}, {"Weight": 107, "Attack": 10, "Pokemon": "Bulbasaur"}, {"Weight": 82, "Attack": 86, "Pokemon": "Bulbasaur"}, {"Weight": 81, "Attack": 43, "Pokemon": "Pikachu"}, {"Weight": 124, "Attack": 11, "Pokemon": "Squirtle"}, {"Weight": 73, "Attack": 2, "Pokemon": "Pikachu"}, {"Weight": 85, "Attack": 51, "Pokemon": "Charmander"}, {"Weight": 125, "Attack": 80, "Pokemon": "Squirtle"}, {"Weight": 105, "Attack": 32, "Pokemon": "Squirtle"}, {"Weight": 78, "Attack": 54, "Pokemon": "Bulbasaur"}, {"Weight": 84, "Attack": 0, "Pokemon": "Squirtle"}, {"Weight": 50, "Attack": 38, "Pokemon": "Bulbasaur"}, {"Weight": 50, "Attack": 19, "Pokemon": "Squirtle"}, {"Weight": 86, "Attack": 46, "Pokemon": "Charmander"}, {"Weight": 103, "Attack": 42, "Pokemon": "Pikachu"}, {"Weight": 55, "Attack": 56, "Pokemon": "Bulbasaur"}, {"Weight": 88, "Attack": 60, "Pokemon": "Bulbasaur"}, {"Weight": 67, "Attack": 77, "Pokemon": "Squirtle"}, {"Weight": 129, "Attack": 30, "Pokemon": "Squirtle"}, {"Weight": 54, "Attack": 24, "Pokemon": "Squirtle"}, {"Weight": 92, "Attack": 2, "Pokemon": "Bulbasaur"}, {"Weight": 108, "Attack": 3, "Pokemon": "Bulbasaur"}, {"Weight": 81, "Attack": 94, "Pokemon": "Bulbasaur"}, {"Weight": 51, "Attack": 98, "Pokemon": "Squirtle"}, {"Weight": 115, "Attack": 13, "Pokemon": "Squirtle"}, {"Weight": 91, "Attack": 40, "Pokemon": "Charmander"}, {"Weight": 107, "Attack": 72, "Pokemon": "Charmander"}, {"Weight": 85, "Attack": 19, "Pokemon": "Charmander"}, {"Weight": 61, "Attack": 95, "Pokemon": "Pikachu"}, {"Weight": 96, "Attack": 72, "Pokemon": "Squirtle"}, {"Weight": 132, "Attack": 26, "Pokemon": "Squirtle"}, {"Weight": 141, "Attack": 66, "Pokemon": "Bulbasaur"}, {"Weight": 50, "Attack": 52, "Pokemon": "Charmander"}, {"Weight": 64, "Attack": 67, "Pokemon": "Squirtle"}, {"Weight": 149, "Attack": 61, "Pokemon": "Bulbasaur"}, {"Weight": 103, "Attack": 14, "Pokemon": "Squirtle"}, {"Weight": 62, "Attack": 96, "Pokemon": "Squirtle"}, {"Weight": 92, "Attack": 4, "Pokemon": "Bulbasaur"}, {"Weight": 134, "Attack": 67, "Pokemon": "Bulbasaur"}, {"Weight": 125, "Attack": 11, "Pokemon": "Bulbasaur"}, {"Weight": 118, "Attack": 86, "Pokemon": "Pikachu"}, {"Weight": 56, "Attack": 77, "Pokemon": "Charmander"}, {"Weight": 118, "Attack": 75, "Pokemon": "Charmander"}, {"Weight": 97, "Attack": 56, "Pokemon": "Pikachu"}, {"Weight": 53, "Attack": 16, "Pokemon": "Bulbasaur"}, {"Weight": 126, "Attack": 24, "Pokemon": "Bulbasaur"}, {"Weight": 102, "Attack": 29, "Pokemon": "Pikachu"}, {"Weight": 128, "Attack": 21, "Pokemon": "Squirtle"}, {"Weight": 65, "Attack": 25, "Pokemon": "Pikachu"}, {"Weight": 70, "Attack": 80, "Pokemon": "Pikachu"}, {"Weight": 149, "Attack": 60, "Pokemon": "Squirtle"}, {"Weight": 108, "Attack": 61, "Pokemon": "Charmander"}, {"Weight": 73, "Attack": 83, "Pokemon": "Bulbasaur"}, {"Weight": 129, "Attack": 33, "Pokemon": "Charmander"}, {"Weight": 63, "Attack": 32, "Pokemon": "Bulbasaur"}, {"Weight": 135, "Attack": 70, "Pokemon": "Charmander"}, {"Weight": 98, "Attack": 85, "Pokemon": "Pikachu"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
